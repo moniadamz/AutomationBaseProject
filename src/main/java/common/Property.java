@@ -6,15 +6,13 @@ import java.util.Properties;
 
 public class Property {
     public static String CHROME_DRIVE_PATH;
-    public static String IE64_DRIVE_PATH;
     public static final String BROWSER_NAME;
     public static final String SITE_ADDRESS;
 
     public static final String PROPERTIES_FILE = "config.properties";
 
     static {
-        CHROME_DRIVE_PATH = new File("").getAbsolutePath() + "\\resources\\drivers\\chromedriver.exe";
-        IE64_DRIVE_PATH = new File("").getAbsolutePath() + "\\resources\\drivers\\IEDriverServer.exe";
+        CHROME_DRIVE_PATH = new File("").getAbsolutePath() + "\\src\\main\\\\resources\\drivers\\chromedriver.exe";
         BROWSER_NAME = get("browser.name");
         SITE_ADDRESS = get("site.address");
     }
